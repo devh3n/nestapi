@@ -1,0 +1,38 @@
+{
+    "name": "nestapi/nestapi",
+    "description": "Dynamic PHP client for the NestAPI web services",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["nestapi", "api", "client", "psr-18"],
+    "homepage": "https://nestapi.ir",
+    "authors": [
+        {
+            "name": "Hossein Saberi",
+            "email": "devh3n@duck.com",
+            "homepage": "https://nestapi.ir"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/devh3n/nestapi/issues",
+        "source": "https://github.com/devh3n/nestapi"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "require": {
+        "php": "^8.1",
+        "guzzlehttp/guzzle": "^7.9",
+        "psr/http-client": "^1.0",
+        "psr/http-factory": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "NestApi\\": "src/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit --bootstrap vendor/autoload.php tests"
+    }
+}
